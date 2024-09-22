@@ -4,4 +4,5 @@ export { default as Channel } from "./channel/channel"
 export { default as VideoDetail } from "./video/videoDetail"
 export { default as Search } from "./search/search"
 export { default as SearchBar } from "./search-bar/searchBar"
+export { default as Category } from "./category/category"
 export { default as Navbar } from './navbar/navbar'
