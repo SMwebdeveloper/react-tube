@@ -1,0 +1,1 @@
+export const logo = 'https://media.graphassets.com/xdIRSn80Sb62Tv2l1og4'
