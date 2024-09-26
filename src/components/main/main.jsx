@@ -12,7 +12,7 @@ const Main = () => {
     ApiService.fetching(`search?part=snippet&q=${selectedCategory}`)
       .then((data) => setVideos(data.items))
       .catch((error) => console.log(error));
-  }, []);
+  }, [selectedCategory]);
 
   return (
     <Stack>

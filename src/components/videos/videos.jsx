@@ -2,7 +2,7 @@ import { Stack, Box } from "@mui/material";
 import { VideoCard, ChannelCard, Loader } from "..";
 
 const Videos = ({ videos }) => {
-  if (!videos.length) return <Loader />;
+  if (!videos?.length) return <Loader />;
 
   return (
     <Stack
