@@ -1,4 +1,4 @@
-import { Stack, Box } from "@mui/material";
+import { Stack, Box, Typography } from "@mui/material";
 import { logo } from "../../constants";
 import { colors } from "../../constants/colors";
 import { Link } from "react-router-dom";
@@ -17,7 +17,14 @@ const Navbar = () => {
         background: colors.primary,
       }}
     >
-      <Link to="/">You tube</Link>
+      <Link to="/">
+        <Typography
+          variant="h3"
+          sx={{ fontSize: "26px", fontWeight: "medium", color: "gray" }}
+        >
+          Sammitube
+        </Typography>
+      </Link>
       <SearchBar />
       <Box />
       {/* <img src={logo} alt="logo" /> */}
