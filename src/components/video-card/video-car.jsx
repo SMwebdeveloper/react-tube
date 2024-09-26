@@ -22,7 +22,7 @@ const VideoCard = ({ video }) => {
     >
       <Link to={`/video/${video.id.videoId}`}>
         <CardMedia
-          image={video?.snippet?.thumbnails?.high?.url}
+          src={video?.snippet?.thumbnails?.high?.url}
           alt={video?.snippet?.title}
           sx={{
             width: { xs: "100%", sm: "360px", md: "320px" },
@@ -48,7 +48,7 @@ const VideoCard = ({ video }) => {
             {video?.snippet?.description.slice(0, 70)}
           </Typography>
         </Link>
-        <>
+        <Link to={`/channel/${video?.snippet?.channelId}`}>
           <Stack
             direction={"row"}
             position={"absolute"}
@@ -64,7 +64,7 @@ const VideoCard = ({ video }) => {
               />
             </Typography>
           </Stack>
-        </>
+        </Link>
       </CardContent>
     </Card>
   );
